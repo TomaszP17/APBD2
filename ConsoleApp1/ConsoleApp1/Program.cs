@@ -1,6 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World2!");
-Console.WriteLine("Hello, World3!");
-Console.WriteLine("Modyfikacja kolejnaaaaa!");
+
+Console.WriteLine(GetAvg(new []{1,2,3,4,5}));
+
+static double GetAvg(int[] arr)
+{
+    int sum = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        sum += arr[i];
+    }
+
+    return sum / arr.Length;
+}
