@@ -14,3 +14,8 @@ static double GetAvg(int[] arr)
 
     return sum / arr.Length;
 }
+
+static int getMaxValue(int[] arr)
+{
+    return arr.Max();
+}
